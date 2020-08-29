@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-9</title>
+    <style>
+        body {
+            margin: 5px;
+            background-color: aliceblue;
+        }
+
+        .heading_Container {
+            background-color: silver;
+            width: 100%;
+            height: fit-content;
+            border-radius: 10px;
+            border: 1px solid rgb(160, 160, 160);
+            position: fixed;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            color: aliceblue;
+
+        }
+
+        li {
+            margin: 7px 10px 7px 95px;
+            width: auto;
+            height: 50px;
+            display: inline;
+            float: left;
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+
+        }
+
+        a:hover li {
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            outline-style: auto;
+        }
+
+        .main_Image {
+            width: 100%;
+            height: 930px;
+            margin-top: 70px;
+            border-radius: 10px;
+            border-block: 5px solid rgb(177, 206, 211);
+        }
+
+        .heading {
+            margin-top: 30px;
+            width: 100%;
+            height: 60px;
+            font-family: sans-serif;
+            font-size: 50px;
+            text-align: center;
+
+        }
+
+        .team_Member_Container {
+            width: 100%;
+            height: 320px;
+        }
+
+        .team_Member_Image {
+            margin: 10px 40px;
+            margin-bottom: 60px;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            float: left;
+            border: 2px solid rgb(5, 68, 184);
+        }
+
+        .about_us_Container {
+            width: 100%;
+            height: 620px;
+
+        }
+
+        .about_us_Main {
+            background-color: silver;
+            color: whitesmoke;
+            margin: 5px;
+            padding: 10px;
+            width: 65%;
+            height: 550px;
+            font-size: 34px;
+            align-content: center;
+            border: 1px solid rgb(160, 160, 160);
+            float: left;
+
+        }
+
+        .about_us_Image {
+            margin: 7px 10px;
+            width: 30.5%;
+            height: 178.7px;
+            border: 1px solid rgb(160, 160, 160);
+            float: left;
+        }
+
+        .technology_used_Container {
+            height: 350px;
+        }
+
+        .div-1 {
+            background-color: white;
+            margin: 20px;
+            width: 270px;
+            height: 350px;
+            float: left;
+            border-radius: 8px;
+            border: 1px solid rgb(5, 68, 184);
+        }
+
+        .image {
+            margin: 12px;
+            width: 243px;
+            height: 150px;
+            border-radius: 8px;
+        }
+
+        .button-read_more {
+            margin: 10px;
+            width: 250px;
+            height: 40px;
+            border-radius: 8px;
+            color: white;
+            background-color: red;
+            font-size: 20px;
+
+        }
+
+        p {
+            margin: 12px;
+            width: 230px;
+            height: 80px;
+        }
+
+        .contact_Container {
+            width: 100%;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid palevioletred;
+            border-radius: 10px;
+        }
+
+        .contact_text {
+            padding-top: 7px;
+            width: 100%;
+            text-align: center;
+        }
+
+        @media (max-width:1346px) and (min-width: 1142px) {
+            .main_Image {
+                margin-top: 70px;
+                width: 100%;
+                height: 300px;
+                border-radius: 10px;
+                border-block: 5px solid rgb(177, 206, 211);
+            }
+            li {
+                margin: 7px 10px 7px 70px;
+                font-size: 35px;
+
+            }
+
+            .main_Image {
+                width: 100%;
+                height: 730px;
+                border-radius: 10px;
+                border-block: 5px solid rgb(177, 206, 211);
+            }
+
+            .team_Member_Container {
+                height: 570px;
+            }
+
+            .team_Member_Image {
+                margin: 10px 50px;
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+            }
+
+            .about_us_Container {
+                height: 580px;
+            }
+
+            .about_us_Main {
+                width: 60%;
+                font-size: 30px;
+            }
+
+            .about_us_Image {
+                width: 35%;
+            }
+
+            .technology_used_Container {
+                height: 350px;
+            }
+
+            .div-1 {
+                margin: 5px 25px;
+                width: 230px;
+                height: 340px;
+            }
+
+            .image {
+                margin: 8px;
+                width: 215px;
+                height: 150px;
+            }
+
+            .button-read_more {
+                margin: 8px;
+                width: 200px;
+                background-color: red;
+
+            }
+
+            p {
+                margin: 10px;
+                width: 215px;
+                height: 95px;
+            }
+
+        }
+
+        @media (max-width:1141px) and (min-width: 1020px) {
+            .main_Image {
+                margin-top: 70px;
+                width: 100%;
+                height: 300px;
+                border-radius: 10px;
+                border-block: 5px solid rgb(177, 206, 211);
+            }
+
+            li {
+                margin: 7px 10px 7px 50px;
+                font-size: 30px;
+
+            }
+
+            .main_Image {
+                width: 100%;
+                height: 630px;
+                border-radius: 10px;
+                border-block: 5px solid rgb(177, 206, 211);
+            }
+
+            .team_Member_Container {
+                height: 700px;
+            }
+
+            .team_Member_Image {
+                margin: 10px 50px;
+                width: 320px;
+                height: 320px;
+                border-radius: 50%;
+            }
+
+            .about_us_Container {
+                height: 580px;
+            }
+
+            .about_us_Main {
+                width: 55%;
+                font-size: 28px;
+            }
+
+            .about_us_Image {
+                width: 38%;
+            }
+
+            .technology_used_Container {
+                height: 350px;
+            }
+
+            .div-1 {
+                margin: 5px 25px;
+                width: 200px;
+                height: 340px;
+            }
+
+            .image {
+                margin: 8px;
+                width: 184px;
+                height: 150px;
+            }
+
+            .button-read_more {
+                margin: 8px;
+                width: 184px;
+
+            }
+
+            p {
+                margin: 10px;
+                width: 180px;
+                height: 95px;
+                font-size: 15px;
+            }
+
+        }
+
+        @media (max-width:1019px) and (min-width: 680px) {
+            .main_Image {
+                margin-top: 50px;
+                width: 100%;
+                height: 300px;
+                border-radius: 10px;
+                border-block: 5px solid rgb(177, 206, 211);
+            }
+
+            li {
+                margin: 7px 10px 7px 30px;
+                font-size: 23px;
+                height: 30px;
+
+            }
+
+            .main_Image {
+                width: 100%;
+                height: 500px;
+                border-radius: 10px;
+                border-block: 5px solid rgb(177, 206, 211);
+            }
+
+            .team_Member_Container {
+                height: 550px;
+            }
+
+            .team_Member_Image {
+                margin: 10px 35px;
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+            }
+
+            .about_us_Container {
+                height: 580px;
+            }
+
+            .about_us_Main {
+                width: 50%;
+                font-size: 21px;
+            }
+
+            .about_us_Image {
+                width: 40%;
+            }
+
+            .technology_used_Container {
+                height: 700px;
+            }
+
+            .div-1 {
+                margin: 5px 15px;
+                width: 300px;
+                height: 340px;
+            }
+
+            .image {
+                margin: 12px;
+                width: 275px;
+                height: 150px;
+            }
+
+            .button-read_more {
+                margin: 12px;
+                width: 275px;
+                background-color: red;
+
+            }
+
+            p {
+                margin: 12px;
+                width: 275px;
+                height: 80px;
+                font-size: 16px;
+            }
+
+        }
+
+        @media (max-width:679px) and (min-width: 400px) {
+
+            .main_Image {
+                margin-top: 320px;
+                width: 100%;
+                height: 300px;
+                border-radius: 10px;
+                border-block: 5px solid rgb(177, 206, 211);
+            }
+
+            li {
+                margin: 7px 25%;
+                font-size: 35px;
+                width: 100%;
+                height: 50px;
+
+            }
+
+            a:hover li {
+                background-color: white;
+                color: black;
+                padding-left: 20px;
+                border-radius: 5px;
+                width: max-content;
+                outline-style: auto;
+            }
+
+            .main_Image {
+                width: 100%;
+                height: 500px;
+                border-radius: 10px;
+                border-block: 5px solid rgb(177, 206, 211);
+            }
+
+            .team_Member_Container {
+                height: 1200px;
+            }
+
+            .team_Member_Image {
+                margin: 10px 35px;
+                width: 280px;
+                height: 280px;
+                border-radius: 50%;
+            }
+
+            .about_us_Container {
+                height: 1160px;
+            }
+
+            .heading {
+                height: max-content;
+            }
+
+
+            .about_us_Main {
+                width: 95%;
+                font-size: 22px;
+            }
+
+            .about_us_Image {
+                width: 95%;
+            }
+
+            .technology_used_Container {
+                height: 1400px;
+            }
+
+            .div-1 {
+                margin: 5px 15px;
+                width: 350px;
+                height: 340px;
+            }
+
+            .image {
+                margin: 12px;
+                width: 326px;
+                height: 150px;
+            }
+
+            .button-read_more {
+                margin: 12px;
+                width: 326px;
+                background-color: red;
+
+            }
+
+            p {
+                margin: 12px;
+                width: 320px;
+                height: 80px;
+                font-size: 20px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading_Container">
+        <ul>
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="#About_us">
+                <li>About us</li>
+            </a>
+            <a href="#Team">
+                <li>Team</li>
+            </a>
+            <a href="#Technologies">
+                <li>Technologies</li>
+            </a>
+            <a href="#Contact">
+                <li>Contact</li>
+            </a>
+
+        </ul>
+    </div>
+    <div>
+        <img class="main_Image" src="Images_FullStack-9/emile-perron-xrVDYZRGdw4-unsplash.jpg">
+    </div>
+    <div id="Team">
+        <h1 class="heading">Team Member</h1>
+    </div>
+    <div class="team_Member_Container">
+        <img class="team_Member_Image" src="Images_FullStack-9/1.png">
+        <img class="team_Member_Image" src="Images_FullStack-9/2.png">
+        <img class="team_Member_Image" src="Images_FullStack-9/3.png">
+        <img class="team_Member_Image" src="Images_FullStack-9/9.png">
+    </div>
+    <div id="About_us">
+        <h1 class="heading">About us</h1>
+    </div>
+
+    <div class="about_us_Container">
+        <div class="about_us_Main">With web development taking off rapidly in the industry, the demand for Web
+            Developers is skyrocketing. In fact, web development has emerged as a promising field right now, attracting
+            aspirants from all educational and professionals backgrounds.
+            If you are also interested in web development, the best way to upskill in this field is to work on web
+            development projects. The more you practice and experiment with challenging web development projects, the
+            better will be your real-world development skills.
+            With web development taking off rapidly in the industry, the demand for Web Developers is skyrocketing. In
+            fact, web development has emerged as a promising field right now, attracting aspirants from all educational
+            and professionals backgrounds.
+
+        </div>
+        <img class="about_us_Image" src="Images_FullStack-9/p1.jpg">
+        <img class="about_us_Image" src="Images_FullStack-9/p2.jpeg">
+        <img class="about_us_Image" src="Images_FullStack-9/p3.jpg">
+
+    </div>
+    <div id="Technologies">
+        <h1 class="heading">Technology used</h1>
+    </div>
+
+    <div class="technology_used_Container">
+
+        <div class="div-1">
+            <img class="image" src="Images_FullStack-9/Introduction to html.png">
+            <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed
+                in a web browser. </p>
+            <button class="button-read_more" style="background-color: rgb(7, 7, 177);">Read more</button>
+        </div>
+        <div class="div-1">
+            <img class="image" src="Images_FullStack-9/introduction to css.png">
+            <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document
+                written in a markup language like HTML. </p>
+            <button class="button-read_more">Read more</button>
+        </div>
+        <div class="div-1">
+            <img class="image" src="Images_FullStack-9/introduction to JQuery.jpg">
+            <p>JQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as
+                event handling, CSS animation, and Ajax.</p>
+            <button class="button-read_more">Read more</button>
+        </div>
+        <div class="div-1">
+            <img class="image" src="Images_FullStack-9/introduction to bootstrap.jpg    ">
+            <p>In general, bootstrapping usually refers to a self-starting process that is supposed to proceed without
+                external input. </p>
+            <button class="button-read_more">Read more</button>
+        </div>
+    </div>
+
+    <div id="Contact">
+        <h1 class="heading">Contact</h1>
+    </div>
+    <div class="contact_Container">
+        <h4 class="contact_text">Website Template for Practical-9 © ,<a href="https://www.beta-labs.in/">Beta-labs</a>
+        </h4>
+        <h4 class="contact_text"><a href="#">Back to Home</a></h4>
+    </div>
+
+</body>
+
+</html>
